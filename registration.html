@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIU</title>
+    <link rel="icon" href="images/folio_discuss_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <!--owl carousel linkup starts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--owl carousel linkup ends-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/log_reg.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/users.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body onload="pLoader()">
+    <!--(loader starts)-->
+    <div id="wrapLoader">
+        <div id="pLoader">
+            
+        </div>
+    </div>
+    <!--(loader ends)-->
+    <!--(folio header starts)-->
+    <div class="folioHeader">
+        <header>
+            <!--(navigation bar starts)-->
+            <nav>
+                <!--(text logo starts)-->
+                <div class="textLogo">
+                    <a href="home.html">
+                        <!--(first name starts)-->
+                        <span class="half-border-top half-border-bottom">myworld</span>
+                        <!--(first name ends)-->
+                        <!--(last name starts)-->
+
+                        <!--(last name ends)-->
+                    </a>
+                </div>
+                <!--(text logo ends)-->
+                <!--(menu item starts)-->
+                <div id="menuItemsId" class="menuItems">
+                    <ul>
+                        <li><a class="" href="contact.html">support</a></li>
+                        <li><a class="" href="about.html">about</a></li>
+                        <li><a class="" href="login.html">login</a></li>
+                        <li><a class="active" href="registration.html">registration</a></li>
+                    </ul>
+                </div>
+                <!--(menu item ends)-->
+                <!--(menu icon starts)-->
+                <div id="menuIconsId" class="menuIcon">
+                    <div class="bar1"></div>
+                    <div class="bar2">
+                        <div class="bar2child"></div>
+                    </div>
+                    <div class="bar3"></div>
+                </div>
+                <!--(menu icon ends)-->
+            </nav>
+            <!--(navigation bar ends)-->
+        </header>
+    </div>
+    <!--(folio header ends)-->
+<!--(folio elements starts)-->
+<div class="folioElements animate__animated animate__fadeInDownBig">
+    <!--(login registration section starts)-->
+    <div class="logRegSection">
+        <div class="logRegSectionHeader">
+            <p> You need to register to get full access. </p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                <!-- Registration form starts -->
+                <div class="loginRegForm">
+                    <form method="post" action="">
+                        <label for="registration_name">Name</label>
+                        <input type="text" id="registration_name" name="registration_name" maxlength="50" required>
+
+                        <label for="registration_email">Email:</label>
+                        <input type="email" id="registration_email" name="registration_email" maxlength="50" required>
+
+                        <label for="registration_birthday">Birthday</label>
+                        <input type="date" id="registration_birthday" name="registration_birthday" max="" required>
+
+                        <label for="registration_gender">Gender</label>
+                        <select id="registration_gender" name="registration_gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="registration_password">Password</label>
+                        <input type="password" id="registration_password" name="registration_password" maxlength="50" required>
+
+                        <label for="registration_confirm_password">Confirm Password:</label>
+                        <input type="password" id="registration_confirm_password" name="registration_confirm_password" maxlength="50" required>
+
+                        <div class="submitForm">
+                            <p>
+                                By clicking registration, you agree to our Terms, Privacy Policy and Cookies Policy <a href="about.html">(about)</a>.
+                            </p>
+                            <!-- Error showing starts during registration form submitting -->
+                            <p>
+                                
+                            </p>
+                            <!-- Error showing ends during registration form submitting -->
+
+                            <!-- Success showing starts registration form submitting -->
+                            <p>
+                                
+                            </p>
+                            <!-- Success showing ends registration form submitting -->
+
+                            <!-- Input data check starts during registration form submitting -->
+                            <p>
+                            
+                            </p>
+                            <!-- Input data check ends during registration form submitting -->
+                            <button type="submit" name="registration_submit">Registration</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Registration form ends -->
+            </div>
+        </div>
+    </div>
+    <!--(login registration section ends)-->   
+</div>
+<!--(folio elements ends)-->
+<!--(folio footer starts)-->
+<div class="folioFooter">
+    <footer>
+        <p>
+        All rights reserved by myworld, 2024.
+              
+        </p>
+    </footer>
+</div>
+<!--(folio footer ends)-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kit.fontawesome.com/38212b922b.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<!--owl carousel linkup starts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--owl carousel linkup ends-->
+<script src="js/portfolio.js"></script>
+<script src="js/media_query.js"></script>
+</body>
+</html>
